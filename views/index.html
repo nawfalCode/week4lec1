@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>
+            Welcome to Week 4!!! <%= username %> 
+        </h1>
+
+        <ul>
+            <% for(let i=0;i<data.length;i++){ %>
+                <li>
+                    <%= data[i].name %> | <%= data[i].age %>
+                </li>
+                <% } %>
+        </ul>
+
+        <form action="/data" method="POST">
+          Name  <input type="text" name="carName" /><br>
+           Model <input type="text" name="carModel" /><br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
